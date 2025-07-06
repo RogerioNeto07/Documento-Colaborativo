@@ -1,0 +1,22 @@
+# Python - Ignorar ambientes virtuais
+venv/
+*.pyc
+__pycache__/
+
+# Python - Ignorar arquivos de dados ou de ambiente específicos do servidor
+server/.env # Para a chave secreta e outras configs sensíveis
+
+# Node.js (caso você use npm/node_modules no futuro ou em alguma subpasta)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs de qualquer tipo
+*.log
+
+# Arquivos de sistema operacional ou editores
+.DS_Store
+.vscode/ # Ignora configurações do VS Code específicas do usuário
+.idea/   # Ignora pastas do IntelliJ/PyCharm
+*.swp    # Arquivos de swap do Vim
