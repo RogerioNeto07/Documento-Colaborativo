@@ -1,10 +1,6 @@
------
-
 # Como Executar a Aplicação de Colaboração em Tempo Real
 
 Este guia ajuda a configurar e executar tanto o servidor quanto o cliente da aplicação de colaboração em tempo real.
-
------
 
 ## Estrutura do Projeto
 
@@ -24,8 +20,6 @@ A estrutura do seu repositório deve ser a seguinte:
     ├── app.py
     └── requirements.txt
 ```
-
------
 
 ## 1\. Configurando e Executando o Servidor
 
@@ -59,8 +53,6 @@ Certifique-se de ter o **Python 3** instalado na máquina.
     ```
 
     Você deverá ver uma saída no terminal indicando que o servidor está rodando, provavelmente em `http://0.0.0.0:3000`.
-
------
 
 ## 2\. Configurando e Executando o Cliente
 
