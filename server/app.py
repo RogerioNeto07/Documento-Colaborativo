@@ -1,8 +1,8 @@
+import eventlet
+eventlet.monkey_patch()
+
 from flask import Flask, render_template, request
 from flask_socketio import SocketIO, emit, join_room, leave_room
-import eventlet 
-
-eventlet.monkey_patch()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'uma_chave_secreta_muito_segura'
