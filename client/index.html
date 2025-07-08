@@ -1,13 +1,36 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documento Colaborativo</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>Documento Colaborativo em Tempo Real</h1>
+
+    <div id="connection-panel">
+      <div class="input-group">
+        <label for="docId">ID do Documento:</label>
+        <input type="text" id="docId" value="documento-alpha">
+      </div>
+      <div class="button-group">
+        <button id="connectBtn">Conectar</button>
+        <button id="disconnectBtn" disabled>Desconectar</button>
+      </div>
+      <p>Status: <span id="status">Desconectado</span></p>
+    </div>
+
+    <div id="editor-panel">
+      <textarea id="editor" placeholder="Conecte-se a um documento para começar a editar..." disabled></textarea>
+    </div>
+
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+
 </html>
